@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  min-height: 100vh;
+  font-size: calc(10px + 1vmin);
+  direction: ltr;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.column1 {
+  flex: 70%;
+}
+.column2 {
+  flex: 30%;
+}
+
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 300px) {
+  .tbl1 tr td:nth-child(3),
+  .tbl1 tr th:nth-child(3),
+  .tbl1 tr td:nth-child(4),
+  .tbl1 tr th:nth-child(4),
+  .tbl1 tr td:nth-child(5),
+  .tbl1 tr th:nth-child(5) {
+    display: none;
+  }
+}
+
+.tbl1 {
+  width: 100%;
+}
+
+.tbl2 {
+  width: 60%;
+}
+
+.tblmain,
+th,
+td {
+  border: 1px solid rgb(231, 231, 231);
+}
+.tblmain th {
+  background-color: #d1d1d1;
+}
+
+.tblmain tr:nth-child(even) {
+  background-color: #e7e6e6;
+}
+
+.tbl1 tr td:nth-child(2),
+.tbl1 tr td:nth-child(6) {
+  background: #b8d2e3;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
